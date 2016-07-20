@@ -1,4 +1,4 @@
-package com.mytest.dubbo.cm.controller;
+package com.mytest.dubbo.controller;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -10,12 +10,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.mytest.dubbo.model.User;
 import com.mytest.dubbo.provider.UserService;
 
+
+/**
+ * 本地调用的service用来测试与调用dubbo远程service的性能差别
+ * @author daiderong
+ *
+ */
 @Controller
-public class TestDubboController {
+public class TestCommonController {
 
 	
 	
-	
+
 	@Resource
 	private UserService userService;
 	

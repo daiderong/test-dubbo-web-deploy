@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.mytest.dubbo.db.dao.UserMapper;
 import com.mytest.dubbo.model.User;
-import com.mytest.dubbo.provider.ProviderUserService;
+import com.mytest.dubbo.provider.UserService;
 
-@Service(value="providerUserService")
-public class ProviderUserServiceImpl implements ProviderUserService {
+@Service(value="userService")
+public class UserServiceImpl implements UserService {
 
 	
 //	@Resource(name="test-sqlSessionFactory")

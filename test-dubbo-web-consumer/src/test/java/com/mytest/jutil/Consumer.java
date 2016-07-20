@@ -3,7 +3,7 @@ package com.mytest.jutil;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.mytest.dubbo.model.User;
-import com.mytest.dubbo.provider.ProviderUserService;  
+import com.mytest.dubbo.provider.UserService;  
   
 public class Consumer {  
   
@@ -12,7 +12,7 @@ public class Consumer {
                 new String[] { "context/dubbo-cm.xml" });  
         context.start();  
   
-        ProviderUserService demoService = (ProviderUserService) context.getBean("providerUserService");  
+        UserService demoService = (UserService) context.getBean("providerUserService");  
 //        String hello = demoService.sayHello("daiderong");  
 //        System.out.println(hello);  
   

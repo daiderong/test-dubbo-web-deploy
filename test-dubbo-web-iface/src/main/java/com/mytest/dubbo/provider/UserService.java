@@ -2,7 +2,7 @@ package com.mytest.dubbo.provider;
   
 import com.mytest.dubbo.model.User;  
   
-public interface ProviderUserService {  
+public interface UserService {  
   
   
 	/**
