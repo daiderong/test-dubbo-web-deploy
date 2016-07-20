@@ -4,11 +4,11 @@
 
 ## 作者 ddr2@foxmail.com   (大头)
 
-## 项目主要用到包
-	dubbo 2.5.3
-	spring版本 4.2.5
-	mybatis 3.4.0
-	mysql 5.5
+## 项目主要用的技术及版本
+	Dubbo 2.5.3
+	Spring 4.2.5
+	Mybatis 3.4.0
+	Mysql 5.5
 	
 ## 项目运行环境
 
