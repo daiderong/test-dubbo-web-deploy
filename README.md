@@ -25,8 +25,15 @@ Tomcat 7.0.69
 
 
 ## 运行地址
-	http://localhost:8080/test-dubbo-web-consumer/
 
+	http://localhost:8080/test-dubbo-web-consumer/
+	
+	provider中的controller主要用来查看本地调用service与consumer中调用service时间上的差距！
+
+	http://localhost:8080/test-dubbo-web-provider/
+	
+	两个项目可以做任意分开部署，注意一下本地测试时端口
+	
 
 
 
