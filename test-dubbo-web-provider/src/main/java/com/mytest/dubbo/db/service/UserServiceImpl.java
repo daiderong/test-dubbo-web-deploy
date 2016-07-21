@@ -2,6 +2,8 @@ package com.mytest.dubbo.db.service;
 
 import javax.annotation.Resource;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,9 @@ import com.mytest.dubbo.provider.UserService;
 @Service(value="userService")
 public class UserServiceImpl implements UserService {
 
+	
+	
+	private Log log = LogFactory.getLog(this.getClass());
 	
 //	@Resource(name="test-sqlSessionFactory")
 //	private SqlSessionFactory sqlSessionFactory ;  
@@ -24,6 +29,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User getByName(String name) {
 		
+		log.info("getByName:"+name);
 		 UserMapper userMapper = sessionTemplate.getMapper(UserMapper.class);  
 		 User u = userMapper.getUser(name);
 		 return u;
@@ -97,6 +103,8 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void insertUser(String name, String password) {
+		
+		log.info("insertUser:"+name);
 		 UserMapper userMapper = sessionTemplate.getMapper(UserMapper.class); 
 		 User user = new User();
 		 user.setPassword(password);
