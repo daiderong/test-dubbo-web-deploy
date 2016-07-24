@@ -16,7 +16,7 @@ Jdk 1.7.0_67
 Tomcat 7.0.69 
 
 
-## zk配置文件位置（本实例是在一台机器中安装了三个zk实例）及mysql配置文件位置
+## zk配置文件位置及mysql配置文件位置
 
 + 1 test-dubbo-web-provider 项目中的 resources/context/dubbo-pro.xml 
 + 2 test-dubbo-web-consumer 项目中的 resources/context/dubbo-cm.xml
