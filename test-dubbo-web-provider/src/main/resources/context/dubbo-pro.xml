@@ -10,12 +10,13 @@
 
 	<dubbo:application name="test_provider" />
 
+	<!-- <dubbo:registry protocol="zookeeper"  address="172.16.21.21:2181,172.16.21.21:2182,172.16.21.21:2183" /> -->
 
-	<dubbo:registry protocol="zookeeper"  address="172.16.21.21:2181,172.16.21.21:2182,172.16.21.21:2183" />
 
+	<dubbo:registry protocol="zookeeper"  address="127.0.0.1:2181" />
 	<dubbo:protocol name="dubbo" port="20880" />
-
 	<dubbo:service interface="com.mytest.dubbo.provider.UserService" ref="userService" />
+
 
 	<!-- <bean id="demoService" class="com.mytest.dubbo.provider.impl.DemoServiceImpl" /> -->
 </beans>  
