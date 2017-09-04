@@ -24,6 +24,7 @@ public class TestDubboController {
 	public void getUsers(HttpServletRequest request,HttpServletResponse response)throws Exception{
 		
 //		List<User> users = queryUserService.getUsers("123");
+		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
 		if(name ==null || name.isEmpty()){
@@ -45,6 +46,7 @@ public class TestDubboController {
 	public void createUser(HttpServletRequest request,HttpServletResponse response)throws Exception{
 		
 //		List<User> users = queryUserService.getUsers("123");
+		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
 		if(name ==null || name.isEmpty()){
