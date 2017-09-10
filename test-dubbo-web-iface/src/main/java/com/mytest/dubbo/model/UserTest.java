@@ -4,8 +4,10 @@ package com.mytest.dubbo.model;
 public class UserTest {
 
 
+    private UserTest(){}
 
-    public  void test() {
+
+    public static void main(String args[]) {
         User u1 = new User();
         u1.setUsername("liuyou");
         u1.setAge(17);
@@ -19,6 +21,8 @@ public class UserTest {
         u2.setPassword("1212121213123123123");
 
         //删除一些代码
+
+
 
     }
 
